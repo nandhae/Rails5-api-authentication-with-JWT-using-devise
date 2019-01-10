@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Rails 5 API app to demonstrate setup of authentication with JWT using devise.
 
-Things you may want to cover:
+Setting up complete authentication flow for a service can be really painful. By using devise and devise-jwt libraries we can set up entire authentication flow with rails in minutes.
 
-* Ruby version
+# ToDo -- Write detailed instructions 
 
-* System dependencies
+Setup the databases
+```sh
+$ rake db:create
+$ rake db:migrate
+$ rake db:seed
+```
+You can also run the following instead of the above 3 commands
+```sh
+$ rake db:setup
+```
+To drop the database, run
+```sh
+$ rake db:drop
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run the API server
+```sh
+$ rails s
+```
